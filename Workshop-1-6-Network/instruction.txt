@@ -105,10 +105,10 @@ Part1: Reverse Proxy by DNS
     pantsel/konga:next
 
 	10.6 Install PGAdmin by command:
-	docker image pull dpage/pgadmin4:4.21
+	docker image pull dpage/pgadmin4:4.23
   docker container run -p 8080:80 --name pgadmin \
 	--network=webinternal -e "PGADMIN_DEFAULT_EMAIL=kong@localdomain.com" \
-    -e "PGADMIN_DEFAULT_PASSWORD=kong" -d dpage/pgadmin4:4.21
+    -e "PGADMIN_DEFAULT_PASSWORD=kong" -d dpage/pgadmin4:4.23
 
 	10.7 (local) Test open GUI:
 	http://<public ip>:8080		==> PGAdmin (Email Address: kong@localdomain.com, Password: kong) ==> Add Server: <private ip>, username: kong, password:kong

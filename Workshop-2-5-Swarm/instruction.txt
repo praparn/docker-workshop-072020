@@ -86,7 +86,6 @@ Swarm Service (master)
 
 7. Stop & Remove service by command: docker service rm nodejs
 
-
 ===================================================
 Orchestrator Assignment: node constrain (master)
 ===================================================
@@ -249,7 +248,7 @@ Remove Manager / Worker from Swarm Cluster
 	docker node rm <worker2 hostname>
 	docker node ls
 
-5. (worker2) Rejoin workder2 as manager by join token command:
+4. (worker2) Rejoin workder2 as manager by join token command:
 docker swarm join --token SWMTKN-1-1qnpobqw0hilpc5i90sz803tlhyi1h4k84uok10y814bvhyqf2-3u9rqxfwhbhw52qwqeeiewybl 10.0.1.104:2377
 docker node ls
 
@@ -270,7 +269,7 @@ Swarm Compose
 
 4. Test access web front by ip of docker node via command:
 	export Server_IP=<ip of any node>
-	export Server_Port=80/5000
+	export Server_Port=80
 
 	(basic test web)
 	curl http://$Server_IP:$Server_Port/

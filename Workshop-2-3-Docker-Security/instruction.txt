@@ -191,7 +191,7 @@ Part3: Apparmor in Container
 	touch /home/testcreatefile2
 	touch /etc/testcreatefile3
 	touch /proc/testcreatefile4
-	cp /tmp/testcreatefile /proc/testprohibitfile
+	cp /tmp/testcreatefile1 /proc/testprohibitfile
 	ls -hl /proc | grep test
 
 10. Stop test container by command: "docker container stop sectestrestrict && docker container rm sectestrestrict"

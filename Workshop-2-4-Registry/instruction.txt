@@ -142,12 +142,12 @@ Registry with Harbor
 24. (Teacher Machine) Configure initial start by command:
 	cp harbor.yml.tmpl harbor.yml
 	vi harbor.yml
+		#http:										==> disable http
+		#port:80									==> disable port:80
 		#hostname: reg.mydomain.com					==> hostname: labdocker.com
 		#certificate: /your/certificate/path		==> certificate: /home/ubuntu/docker-workshop-072020/Workshop-2-4-Registry/labdocker.com.crt
 		#private_key: /your/private/key/path		==> private key: /home/ubuntu/docker-workshop-072020/Workshop-2-4-Registry/labdocker.com.key
 		#harbor_admin_password: Harbor12345			==> harbor_admin_password: P@ssw0rd
-		#http:										==> disable http
-		#port:80									==> disable port:80
 
 25. (Teacher Machine) Start harbor with command:
 	sudo ./install.sh
